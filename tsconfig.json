@@ -1,0 +1,38 @@
+{
+  "extends": "@tsconfig/react-native/tsconfig.json",
+  "compilerOptions": {
+    "strict": true,
+    "esModuleInterop": true,
+    "jsx": "react",
+    // Path alias config
+    "baseUrl": ".",
+    "paths": {
+      // This needs to be mirrored in babel.config.js
+      // Components is a directory with sub directories
+      "@assets/*": [
+        "src/assets/*"
+      ],
+      "@components/*": [
+        "src/components/*"
+      ],
+      "@configs/*": [
+        "src/configs/*"
+      ],
+      "@models/*": [
+        "src/models/*"
+      ],
+      "@modules/*": [
+        "src/modules/*"
+      ],
+      "@routes/*": [
+        "src/routes/*"
+      ],
+      "@screens/*": [
+        "src/screens/*"
+      ],
+      "@utils/*": [
+        "src/utils/*"
+      ],
+    }
+  },
+}
